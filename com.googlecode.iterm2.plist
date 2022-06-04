@@ -6401,13 +6401,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.38426321744918823</real>
+				<real>0.37647058823529411</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.31766852736473083</real>
+				<real>0.31372549019607843</real>
 				<key>Red Component</key>
-				<real>0.28623765707015991</real>
+				<real>0.29019607843137257</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -6577,6 +6577,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Brighten Bold Text (Light)</key>
+			<true/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
