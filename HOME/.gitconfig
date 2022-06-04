@@ -14,26 +14,22 @@
     prune = false
 [rebase]
     autoStash = false
-[includeIf "gitdir:~/ccb012100/"]
-    # set all repos in ~/ccb012100 to use personal username/email
-    path = ~/ccb012100/.gitconfig
-[includeIf "gitdir:~/repos/"]
-    # set all repos in ~/ to use work username/email
-    path = ~/repos/.gitconfig
 [alias]
     acm     = ! git add -A && git commit -m
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit -a --amend
-    cm      = commit -m
     a       = add
     ai      = add --interactive
     b       = branch
     br      = branch --remote
+    c       = commit
     cb      = checkout -B
+    cm      = commit -m
     co      = checkout
     d       = diff
     ds      = diff --staged
     dt      = difftool
+    dts     = difftool --staged
     f       = forgit
     fl      = forgit log
     fa      = forgit add
@@ -52,6 +48,8 @@
     l       = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main    = checkout main
     master  = checkout master
+    ps      = push
+    pl      = pull
     pub     = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase --interactive
     ruo     = remote update origin --prune # update local list of remote branches
