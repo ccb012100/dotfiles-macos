@@ -39,7 +39,7 @@ alias tree='exa --tree'
 
 # .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
-alias zsource="$EDITOR $HOME/.zshrc"
+alias zsource="source $HOME/.zshrc"
 
 # directory aliases
 export ccb=~/ccb012100
