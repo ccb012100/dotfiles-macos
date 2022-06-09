@@ -64,7 +64,7 @@
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
 [merge]
-    tool = vscode
+	tool = meld
 [mergetool "vscode"]
     cmd = code --wait $MERGED
 [diff]
