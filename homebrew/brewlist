@@ -69,6 +69,7 @@ lua
 luajit-openresty
 luv
 m4
+macos-trash
 meld
 mosh
 mpdecimal
@@ -104,6 +105,7 @@ ripgrep
 rivsctl
 rtmpdump
 ruby
+shellcheck
 sixdev
 sqlite
 starship
@@ -114,6 +116,7 @@ unbound
 unibilium
 vault
 vim
+visual-studio-code
 watch
 xh
 xorgproto
