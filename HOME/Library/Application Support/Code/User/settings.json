@@ -65,7 +65,11 @@
     "[markdown]": {
         "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
         "editor.fontSize": 14,
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "files.trimTrailingWhitespace": false,
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
@@ -175,7 +179,11 @@
     "editor.bracketPairColorization.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.openEditors.sortOrder": "alphabetical",
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     "window.title": "${dirty}${separator}${rootName}",
     "csv-preview.formatValues": "unquoted",
     "csv-preview.lineNumbers": "ordinal",
