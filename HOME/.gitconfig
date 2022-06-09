@@ -100,7 +100,7 @@
     hunk-header-line-number-style = "#067a00"
     hunk-header-style = file line-number syntax
 [credential "https://github.com"]
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [includeIf "gitdir:~/6RiverSystems/"]
     path = ~/6RiverSystems/.gitconfig
 [init]
@@ -110,3 +110,9 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[github]
+	user = ccb012100
+[push]
+	default = simple
+[url "git@github.com:"]
+	insteadof = https://github.com/
