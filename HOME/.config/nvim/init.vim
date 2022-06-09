@@ -4,10 +4,13 @@ set nocompatible " set nocompatible must be the first line in .vimrc
 set encoding=utf-8
 scriptencoding utf-8
 
-""set viminfo+=n~/.vim/viminfo
+if !has('nvim')
+  set viminfo+=n~/.vim/viminfo
+endif
 
 "" Exit Insert mode
 inoremap jj <Esc>
+inoremap jk <Esc>
 inoremap kj <Esc>
 ""
 
@@ -43,14 +46,12 @@ set wildmenu         " visual autocomplete for command menuh quick between modes
 set ww=<,>,h,l       " wrap to previous/next line when cursor is at line start/end
 let g:rainbow_active = 1 " turn on rainbow brackets
 
-""
-"" create backup files and save to /tmp
-""
-set backupdir=.backup/,~/.backup/,/tmp//
-set directory=.swp/,~/.swp/,/tmp//
-set undodir=.undo/,~/.undo/,/tmp//
+"" set tmp file directories
+set backupdir=.backup/,~/.vim/.backup/,/tmp//
+set directory=.swp/,~/.vim/.swp/,/tmp//
+set undodir=.undo/,~/.vim/.undo/,/tmp//
 
-set rtp+=/usr/local/opt/fzf
+set rtp+=/usr/local/opt/fzf " add fzf to runtimepath
 
 "" Show cursorline and columnline in Insert Mode
 "" Only use relative line numbers in Normal Mode
