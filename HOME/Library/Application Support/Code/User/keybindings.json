@@ -1368,11 +1368,6 @@
     "when": "problemFocus"
   },
   {
-    "key": "alt+w",
-    "command": "remote.tunnel.copyAddressInline",
-    "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
-  },
-  {
     "key": "ctrl+c",
     "command": "-remote.tunnel.copyAddressInline",
     "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
@@ -2675,10 +2670,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+q",
-    "command": "paragraphHardWrapper.wrap"
-  },
-  {
     "key": "ctrl+l m",
     "command": "markdown.showPreviewToSide"
   },
@@ -3023,5 +3014,44 @@
   {
     "key": "ctrl+shift+i",
     "command": "cursorWordRightSelect"
+  },
+  {
+    "key": "cmd+w",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "cmd+w",
+    "command": "solutionExplorer.copy",
+    "when": "view == 'slnbrw' && viewItem == 'project-file'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "solutionExplorer.copy",
+    "when": "view == 'slnbrw' && viewItem == 'project-folder'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "solutionExplorer.copy",
+    "when": "view == 'slnexpl' && viewItem == 'project-file'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "solutionExplorer.copy",
+    "when": "view == 'slnexpl' && viewItem == 'project-folder'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "problems.action.copy",
+    "when": "problemFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "remote.tunnel.copyAddressInline",
+    "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+  },
+  {
+    "key": "cmd+q",
+    "command": "rewrap.rewrapComment",
+    "when": "editorTextFocus"
   }
 ]
