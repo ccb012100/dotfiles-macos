@@ -2304,12 +2304,7 @@
     "command": "workbench.action.navigateForward"
   },
   {
-    "key": "shift+alt+p",
-    "command": "list.expandSelectionUp",
-    "when": "listFocus && listSupportsMultiselect && !inputFocus"
-  },
-  {
-    "key": "shift+alt+n",
+    "key": "ctrl+shift+n",
     "command": "list.expandSelectionDown",
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
   },
@@ -2465,16 +2460,6 @@
     "command": "-comment-ts.commentThis"
   },
   {
-    "key": "shift+alt+p",
-    "command": "cursorUpSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+n",
-    "command": "cursorDownSelect",
-    "when": "textInputFocus"
-  },
-  {
     "key": "alt+up",
     "command": "-scm.forceViewPreviousCommit",
     "when": "scmRepository"
@@ -2531,12 +2516,12 @@
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "ctrl+shift+alt+n",
+    "key": "shift+alt+n",
     "command": "cursorColumnSelectDown",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+alt+p",
+    "key": "shift+cmd+p",
     "command": "cursorColumnSelectUp",
     "when": "textInputFocus"
   },
@@ -2640,19 +2625,16 @@
   },
   {
     "key": "alt+;",
-    "command": "editor.action.jumpToBracket"
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+; ctrl+;",
+    "key": "ctrl+,",
     "command": "findJump.activate"
   },
   {
     "key": "ctrl+;",
     "command": "-findJump.activate"
-  },
-  {
-    "key": "ctrl+; ;",
-    "command": "findJump.activateWithSelection"
   },
   {
     "key": "shift+enter",
@@ -2819,12 +2801,12 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "ctrl+shift+p",
     "command": "list.expandSelectionUp",
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "ctrl+shift+p",
     "command": "cursorUpSelect",
     "when": "textInputFocus"
   },
@@ -3052,6 +3034,58 @@
   {
     "key": "cmd+q",
     "command": "rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+8",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "findJump.activateWithSelection"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+cmd+down",
+    "command": "-cursorColumnSelectDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "cursorColumnSelectDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "cursorColumnSelectUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+x t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "-editor.action.jumpToBracket",
     "when": "editorTextFocus"
   }
 ]
