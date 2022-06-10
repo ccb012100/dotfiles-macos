@@ -1411,7 +1411,7 @@
     "command": "workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+c",
+    "key": "ctrl+c ctrl+c",
     "command": "workbench.action.terminal.sendSequence",
     "when": "terminalFocus",
     "args": {
@@ -2691,10 +2691,6 @@
     "when": "editorFocus"
   },
   {
-    "key": "cmd+x",
-    "command": "workbench.action.showCommands"
-  },
-  {
     "key": "cmd+enter",
     "command": "-notebook.cell.insertCodeCellBelow",
     "when": "notebookCellListFocused && !inputFocus"
@@ -2720,7 +2716,7 @@
     "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+escape",
+    "key": "cmd+x",
     "command": "workbench.action.showCommands"
   },
   {
@@ -3087,5 +3083,9 @@
     "key": "shift+cmd+\\",
     "command": "-editor.action.jumpToBracket",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "workbench.action.showCommands"
   }
 ]
