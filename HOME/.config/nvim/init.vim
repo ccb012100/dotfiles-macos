@@ -1,12 +1,7 @@
-"" Vim: place in ~/.vim/vimrc
-"" Neovim:  place in `~/.config/nvim/init.vim`
+"" place in ~/.config/nvim/init.vim
 set nocompatible " set nocompatible must be the first line in .vimrc
 set encoding=utf-8
 scriptencoding utf-8
-
-if !has('nvim')
-  set viminfo+=n~/.vim/viminfo
-endif
 
 "" Exit Insert mode
 inoremap jj <Esc>
@@ -59,8 +54,11 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 call plug#begin()
+
+"" colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
+
 call plug#end()
 
 syntax enable
@@ -68,4 +66,3 @@ syntax enable
 let g:gruvbox_contrast_dark = 'hard'
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark " Setting dark mode
-""colorscheme purify
