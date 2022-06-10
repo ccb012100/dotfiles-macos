@@ -5687,7 +5687,7 @@
 	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x5b-0x100000-0x21</key>
+		<key>0x21-0x120000-0x12</key>
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
@@ -5698,7 +5698,7 @@
 			<key>Version</key>
 			<integer>2</integer>
 		</dict>
-		<key>0x5d-0x100000-0x1e</key>
+		<key>0x40-0x120000-0x13</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
