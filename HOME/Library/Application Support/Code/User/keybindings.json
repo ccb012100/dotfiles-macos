@@ -3087,5 +3087,9 @@
   {
     "key": "alt+x",
     "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+x ctrl+t",
+    "command": "workbench.action.createTerminalEditor"
   }
 ]
