@@ -814,7 +814,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+shift+m",
+    "key": "ctrl+o",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -3090,6 +3090,11 @@
   },
   {
     "key": "ctrl+x ctrl+t",
-    "command": "workbench.action.createTerminalEditor"
+    "command": "workbench.action.terminal.moveToEditor"
+  },
+  {
+    "key": "cmd+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus"
   }
 ]
