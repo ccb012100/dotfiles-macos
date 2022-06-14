@@ -30,15 +30,14 @@ alias g='git'
 alias gf='git forgit'
 alias gitconfig='nvim ~/.gitconfig'
 alias jq='jq -C'                            # colorize json
-alias npm='echo "use pn/pnpm"'
+alias npm="echo \"use _pn/pnpm_\""
 alias pn='pnpm'
 alias powershell='pwsh'
 alias py='python3'
 alias ripgrep='rg'
 alias sesh='tmux new-session -A -s sesh'
 alias tree='exa --tree'
-alias vim='nvim'
-alias v='nvim'
+alias v='vim'
 
 # .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
