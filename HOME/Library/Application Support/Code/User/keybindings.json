@@ -240,7 +240,7 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "ctrl+.",
+    "key": "shift+cmd+/",
     "command": "redo"
   },
   {
@@ -442,7 +442,7 @@
     "command": "-workbench.action.closeEditorsInGroup"
   },
   {
-    "key": "ctrl+x ctrl+/",
+    "key": "ctrl+x ;",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -814,7 +814,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+shift+o",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -865,11 +865,6 @@
     "key": "ctrl+enter",
     "command": "problems.action.showQuickFixes",
     "when": "problemFocus"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "cursorWordLeft",
-    "when": "textInputFocus"
   },
   {
     "key": "ctrl+x o",
@@ -1326,15 +1321,11 @@
     "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "alt+b",
-    "command": "cursorWordLeft"
-  },
-  {
-    "key": "ctrl+l u",
+    "key": "alt+u",
     "command": "editor.action.transformToUppercase"
   },
   {
-    "key": "ctrl+l l",
+    "key": "ctrl+x ctrl+l",
     "command": "editor.action.transformToLowercase"
   },
   {
@@ -1993,7 +1984,7 @@
     "when": "hasSearchResult && searchViewletFocus"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+o",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -2181,7 +2172,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+l w",
+    "key": "ctrl+l cmd+w",
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
@@ -2309,10 +2300,6 @@
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
   },
   {
-    "key": "ctrl+x ctrl+o",
-    "command": "workbench.action.moveEditorToNextGroup"
-  },
-  {
     "key": "down",
     "command": "-scm.viewNextCommit",
     "when": "scmInputIsInLastPosition && scmRepository && !suggestWidgetVisible"
@@ -2426,10 +2413,6 @@
     "key": "ctrl+k ctrl+i",
     "command": "-workbench.action.showTreeHover",
     "when": "customTreeView && listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+u",
-    "command": "cursorWordLeft"
   },
   {
     "key": "ctrl+w",
@@ -2559,10 +2542,6 @@
     "command": "git.pull"
   },
   {
-    "key": "ctrl+g",
-    "command": "workbench.action.gotoLine"
-  },
-  {
     "key": "ctrl+k v",
     "command": "-markdown.extension.closePreview",
     "when": "markdownPreviewFocus"
@@ -2658,14 +2637,6 @@
   {
     "key": "ctrl+x backspace",
     "command": "deleteAllLeft"
-  },
-  {
-    "key": "alt+f",
-    "command": "cursorWordRight"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "cursorWordRight"
   },
   {
     "key": "ctrl+o",
@@ -2939,11 +2910,6 @@
     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
   },
   {
-    "key": "alt+l",
-    "command": "expandLineSelection",
-    "when": "textInputFocus"
-  },
-  {
     "key": "shift+cmd+n",
     "command": "-workbench.action.newWindow"
   },
@@ -3037,7 +3003,7 @@
     "command": "workbench.action.terminal.focus"
   },
   {
-    "key": "ctrl+shift+,",
+    "key": "alt+,",
     "command": "findJump.activateWithSelection"
   },
   {
@@ -3096,5 +3062,142 @@
     "key": "cmd+v",
     "command": "workbench.action.terminal.paste",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "gotoNextPreviousMember.nextMember"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-gotoNextPreviousMember.nextMember"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "gotoNextPreviousMember.previousMember"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-gotoNextPreviousMember.previousMember"
+  },
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "findJump.activateWithSelection"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+a",
+    "command": "-workbench.action.terminal.selectAll",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+c k",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+x ctrl+o",
+    "command": "textPowerTools.removeSurplusBlankLines"
+  },
+  {
+    "key": "ctrl+l alt+w",
+    "command": "editor.action.toggleRenderWhitespace"
+  },
+  {
+    "key": "ctrl+l k",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "cmd+f",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-repl.action.filter",
+    "when": "inDebugRepl && textInputFocus"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-settings.action.search",
+    "when": "inSettingsEditor"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-editor.action.extensioneditor.showfind",
+    "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-editor.action.webvieweditor.showFind",
+    "when": "webviewFindWidgetEnabled && !editorFocus && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-keybindings.editor.searchKeybindings",
+    "when": "inKeybindings"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-notebook.find",
+    "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-problems.action.focusFilter",
+    "when": "focusedView == 'workbench.panel.markers.view'"
+  },
+  {
+    "key": "cmd+b",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "editor.action.transformToUppercase"
   }
 ]
