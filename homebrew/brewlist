@@ -36,6 +36,7 @@ google-cloud-sdk
 grep
 gron
 guile
+htop
 icu4c
 jansson
 jless
@@ -94,7 +95,6 @@ perl
 pinentry
 pinentry-mac
 pkg-config
-pnpm
 prdsql
 protobuf
 python@3.10
