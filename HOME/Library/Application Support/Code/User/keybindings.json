@@ -240,7 +240,7 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "shift+cmd+/",
+    "key": "ctrl+shift+/",
     "command": "redo"
   },
   {
