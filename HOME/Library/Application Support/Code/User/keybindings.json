@@ -3199,5 +3199,9 @@
   {
     "key": "cmd+u",
     "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "workbench.action.showCommands"
   }
 ]
