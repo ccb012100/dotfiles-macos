@@ -43,6 +43,7 @@ jless
 jq
 kdiff3
 keepassxc
+kitty
 krb5
 kubernetes-cli
 libassuan
@@ -111,6 +112,7 @@ sqlite
 starship
 tealdeer
 the_silver_searcher
+tig
 tree-sitter
 unbound
 unibilium
