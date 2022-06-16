@@ -211,7 +211,6 @@
     "vsicons.presets.jsonOfficial": true,
     "JSON-zain.json.autorefresh": true,
     "workbench.settings.useSplitJSON": true,
-    "workbench.sideBar.location": "right",
     "audioCues.lineHasBreakpoint": "on",
     "audioCues.onDebugBreak": "on",
     "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"], // using colors from Monokai pallette for RainbowTags
@@ -296,5 +295,7 @@
     "terminal.integrated.fontSize": 11,
     "commit-message-editor.view.useMonospaceEditor": true,
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "terminal.integrated.customGlyphs": false
+    "terminal.integrated.customGlyphs": false,
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.tabs.focusMode": "singleClick"
 }
