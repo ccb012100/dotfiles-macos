@@ -15,70 +15,140 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
-                    {
-                        "description": "Post space is pressed alone, left_ctrl otherwise",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
+                  {
+                    "description": "Open Slack",
+                    "manipulators": [
+                      {
+                        "type": "basic",
+                        "from": {
+                          "key_code": "1",
+                          "modifiers": {
+                            "mandatory": ["command", "control"]
+                          }
+                        },
+                        "to": [
+                          {
+                            "shell_command": "open -a slack"
+                          }
                         ]
-                    },
-                    {
-                        "description": "Mouse button4 to back in web. NOTE: Default key setting",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Open Google Chrome",
+                    "manipulators": [
+                      {
+                        "type": "basic",
+                        "from": {
+                          "key_code": "2",
+                          "modifiers": {
+                            "mandatory": ["command", "control"]
+                          }
+                        },
+                        "to": [
+                          {
+                            "shell_command": "open -a 'Google Chrome'"
+                          }
                         ]
-                    },
-                    {
-                        "description": "Mouse button5 to back in web. NOTE: Default key setting",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "pointing_button": "button5"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Open VS Code",
+                    "manipulators": [
+                      {
+                        "type": "basic",
+                        "from": {
+                          "key_code": "3",
+                          "modifiers": {
+                            "mandatory": ["command", "control"]
+                          }
+                        },
+                        "to": [
+                          {
+                            "shell_command": "open -a 'Visual Studio Code'"
+                          }
                         ]
-                    }
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Open kitty terminal",
+                    "manipulators": [
+                      {
+                        "type": "basic",
+                        "from": {
+                          "key_code": "0",
+                          "modifiers": {
+                            "mandatory": ["command", "control"]
+                          }
+                        },
+                        "to": [
+                          {
+                            "shell_command": "open -a kitty"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Post space is pressed alone, left_ctrl otherwise",
+                    "manipulators": [
+                      {
+                        "from": {
+                          "key_code": "spacebar",
+                          "modifiers": {
+                            "optional": ["any"]
+                          }
+                        },
+                        "to": [
+                          {
+                            "key_code": "left_control"
+                          }
+                        ],
+                        "to_if_alone": [
+                          {
+                            "key_code": "spacebar"
+                          }
+                        ],
+                        "type": "basic"
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Mouse button4 to back in web. NOTE: Default key setting",
+                    "manipulators": [
+                      {
+                        "from": {
+                          "pointing_button": "button4"
+                        },
+                        "to": [
+                          {
+                            "key_code": "left_arrow",
+                            "modifiers": ["left_command"]
+                          }
+                        ],
+                        "type": "basic"
+                      }
+                    ]
+                  },
+                  {
+                    "description": "Mouse button5 to back in web. NOTE: Default key setting",
+                    "manipulators": [
+                      {
+                        "from": {
+                          "pointing_button": "button5"
+                        },
+                        "to": [
+                          {
+                            "key_code": "right_arrow",
+                            "modifiers": ["left_command"]
+                          }
+                        ],
+                        "type": "basic"
+                      }
+                    ]
+                  }
                 ]
             },
             "devices": [
@@ -130,7 +200,7 @@
                         "product_id": 18806,
                         "vendor_id": 12951
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": [
                         {
@@ -155,21 +225,21 @@
                         },
                         {
                             "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "right_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "right_command"
                             },
                             "to": [
                                 {
                                     "key_code": "right_option"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "right_command"
                                 }
                             ]
                         }
@@ -184,9 +254,20 @@
                         "product_id": 1,
                         "vendor_id": 5050
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": []
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "keypad_num_lock"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "vk_none"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
