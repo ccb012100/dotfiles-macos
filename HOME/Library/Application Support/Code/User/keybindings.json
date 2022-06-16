@@ -3370,5 +3370,10 @@
   {
     "key": "cmd+4",
     "command": "outline.focus"
+  },
+  {
+    "key": "f2",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   }
 ]
