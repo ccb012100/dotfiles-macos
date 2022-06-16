@@ -2,7 +2,7 @@
     "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
     "breadcrumbs.enabled": true,
     "editor.codeLens": false,
-    "editor.fontFamily": "JetBrains Mono, Haskig, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
+    "editor.fontFamily": "JetBrains Mono, Hack, Cascadia Code, Source Code Pro, Consolas, Roboto Mono, Ubuntu Mono, monospace",
     "editor.fontLigatures": true,
     "editor.letterSpacing": 1,
     "editor.minimap.maxColumn": 60,
@@ -38,7 +38,7 @@
     "git.promptToSaveFilesBeforeCommit": "always",
     "git.rebaseWhenSync": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-    "markdown.preview.fontFamily": "Consolas",
+    "markdown.preview.fontFamily": "Hack, Roboto Mono, JetBrains Mono, Ubuntu Mono, Monospace",
     "markdownlint.config": {
         "MD013": false,
         "MD024": { "siblings_only": true },
@@ -63,8 +63,6 @@
     "zenMode.hideStatusBar": false,
     "yaml.format.enable": true,
     "[markdown]": {
-        "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
-        "editor.fontSize": 14,
         "editor.quickSuggestions": {
             "comments": "off",
             "strings": "off",
@@ -102,7 +100,7 @@
     "explorer.incrementalNaming": "smart",
     "editor.cursorSurroundingLines": 5,
     "git.supportCancellation": true,
-    "markdown.preview.fontSize": 13,
+    "markdown.preview.fontSize": 11,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "window.titleSeparator": "‣",
@@ -174,7 +172,6 @@
     "remote.WSL.debug": true,
     "redhat.telemetry.enabled": true,
     "markdown.preview.scrollEditorWithPreview": false,
-    "terminal.integrated.fontFamily": "Cascadia Mono",
     "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
     "editor.bracketPairColorization.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
@@ -294,4 +291,10 @@
     "rust-analyzer.inlayHints.reborrowHints.enable": true,
     "scm.inputFontSize": 11,
     "github.gitProtocol": "ssh",
+    "problems.defaultViewMode": "table",
+    "debug.console.fontSize": 11,
+    "terminal.integrated.fontSize": 11,
+    "commit-message-editor.view.useMonospaceEditor": true,
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "terminal.integrated.customGlyphs": false
 }
