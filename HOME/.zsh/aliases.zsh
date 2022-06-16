@@ -7,7 +7,9 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 # ls
-alias ls='exa'
+alias ls='exa --git --icons'
+alias tree='exa --tree'
+
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -l'
@@ -36,7 +38,6 @@ alias powershell='pwsh'
 alias py='python3'
 alias ripgrep='rg'
 alias sesh='tmux new-session -A -s sesh'
-alias tree='exa --tree'
 alias v='vim'
 
 # .zshrc
