@@ -36,6 +36,7 @@ alias npm="echo \"use _pn/pnpm_\""
 alias pn='pnpm'
 alias powershell='pwsh'
 alias py='python3'
+alias r='ranger'
 alias ripgrep='rg'
 alias sesh='tmux new-session -A -s sesh'
 alias v='vim'
