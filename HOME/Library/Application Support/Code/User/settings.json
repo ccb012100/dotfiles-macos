@@ -14,7 +14,8 @@
         "*.adoc": "asciidoc",
         "*.DotSettings": "xml",
         ".gitignore_global": "txt",
-        "attributes": "properties"
+        "attributes": "properties",
+        "*.conf": "editorconfig"
     },
     "files.exclude": {
         "**/.git": true,
