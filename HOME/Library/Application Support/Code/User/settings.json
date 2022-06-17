@@ -84,7 +84,7 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -222,6 +222,15 @@
     "editor.rulers": [80, 120],
     "[csharp][markdown][javascript][typescript][json][html][rust]": {
         "editor.rulers": [120]
+    },
+    "[git-commit]": {
+        "editor.rulers": [
+            50,
+            72
+        ],
+        "rewrap.autoWrap.enabled": true,
+        "rewrap.wrappingColumn": 72,
+        "workbench.editor.restoreViewState": false
     },
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
