@@ -16,28 +16,42 @@
     ui = true
 [pull]
     ff = only
-    rebase = false
+    rebase = true
 [fetch]
     prune = false
 [rebase]
     autoStash = false
 [alias]
-    acm     = ! git add -A && git commit -m
+    acm     = ! git add -vA && git commit -m
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit -a --amend
-    a       = add
+    a       = add -v
     ai      = add --interactive
-    b       = branch
-    br      = branch --remote
+    b       = branch -v
+    br      = branch --remote -v
     c       = commit
-    cb      = checkout -B
+    cb      = checkout -vB
     cm      = commit -m
     co      = checkout
     d       = diff
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
+    l       = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+    l1      = l -1 --stat
+    last    = log -1 HEAD --stat
+    main    = checkout -v main
+    master  = checkout -v master
+    ps      = push -v
+    pl      = pull -v
+    pub     = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    ri      = rebase  -v --interactive
+    ruo     = remote update origin -v --prune # update local list of remote branches
+    s       = status -sb
     f       = forgit
+    # resets the previous commit but keep all the changes from that commit in the working directory
+    undo = reset HEAD~1 --mixed
+    ## forgit aliases
     fl      = forgit log
     fa      = forgit add
     fcb     = forgit checkout_branch
@@ -52,17 +66,6 @@
     frc     = forgit revert_commit
     frg     = forgit reset_head
     fss     = forgit stash_show
-    l       = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    main    = checkout main
-    master  = checkout master
-    ps      = push
-    pl      = pull
-    pub     = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-    ri      = rebase --interactive
-    ruo     = remote update origin --prune # update local list of remote branches
-    s       = status
-    # resets the previous commit but keep all the changes from that commit in the working directory
-    undo = reset HEAD~1 --mixed
 [merge]
 	tool = meld
 [mergetool "vscode"]
