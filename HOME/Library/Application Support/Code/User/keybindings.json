@@ -2455,23 +2455,18 @@
     "when": "textInputFocus && !accessibilityModeEnabled"
   },
   {
-    "key": "shift+alt+u",
+    "key": "ctrl+shift+b",
     "command": "cursorLeftSelect",
     "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+i",
+    "key": "ctrl+shift+f",
     "command": "cursorRightSelect",
     "when": "textInputFocus"
   },
   {
     "key": "shift+cmd+right",
     "command": "cursorWordRightSelect"
-  },
-  {
-    "key": "ctrl+l c",
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-    "when": "editorTextFocus"
   },
   {
     "key": "shift+alt+i",
@@ -2510,11 +2505,11 @@
     "command": "textPowerTools.changeCaseToSwapCase"
   },
   {
-    "key": "ctrl+c ctrl+k",
+    "key": "ctrl+c n",
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+c ctrl+j",
+    "key": "ctrl+c p",
     "command": "workbench.action.previousEditor"
   },
   {
@@ -3039,7 +3034,7 @@
     "command": "-workbench.action.openSettings"
   },
   {
-    "key": "cmd+,",
+    "key": "ctrl+shift+.",
     "command": "findJump.activateWithSelection"
   },
   {
@@ -3375,5 +3370,38 @@
     "key": "f2",
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+cmd+n",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l d",
+    "command": "editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "-editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+d",
+    "command": "deleteWordRight",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+f1",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "ctrl+h ctrl+s",
+    "command": "workbench.action.openSettingsJson"
   }
 ]
