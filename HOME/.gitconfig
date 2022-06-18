@@ -106,7 +106,7 @@
     pub     = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase  -v --interactive
     ruo     = remote update origin -v --prune # update local list of remote branches
-    s       = status -sb
+    s       = status
     f       = forgit
     fe      = fetch -v
     # resets the previous commit but keep all the changes from that commit in the working directory
