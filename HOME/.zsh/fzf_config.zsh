@@ -1,12 +1,10 @@
-#######
-# fzf #
-#######
+# fzf
+# https://github.com/junegunn/fzf
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export FZF_COMPLETION_TRIGGER=';;' # default is '**'
-bindkey '^t' fzf-completion
-bindkey '^i' expand-or-complete
+export FZF_COMPLETION_TRIGGER=';;'  # default is '**'
+bindkey '^i' fzf-completion         # also binds <TAB> key
 
 # use ripgrep instead of find
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git' --exclude node_modules"
