@@ -1,26 +1,85 @@
+# $HOME/.gitconfig
 [core]
     editor = vim
     autocrlf = input
     filemode = false
 	excludesfile = ~/.config/git/ignore
-[user]
-    name = Christopher Bocardo
-    email = ccb012100@users.noreply.github.com
-    signingkey = 0C186B9F
+[gpg]
+    program = gpg
 [commit]
     gpgsign = true
 	verbose = true
-[gpg]
-    program = gpg
 [color]
     ui = true
 [pull]
     ff = only
     rebase = true
+[push]
+	default = simple
 [fetch]
     prune = false
 [rebase]
     autoStash = false
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+##
+## GitHub
+[github]
+	user = ccb012100
+[url "git@github.com:"]
+	insteadof = https://github.com/
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+## set .gitconfig per directory
+[includeIf "gitdir:~/6RiverSystems/"]
+    path = ~/.local/.gitconfig.6RiverSystems
+[includeIf "gitdir:~/.emacs.d/"]
+    path = ~/.local/.gitconfig.ccb012100
+[includeIf "gitdir:~/.dotfiles/"]
+    path = ~/.local/.gitconfig.ccb012100
+##
+## diff/merge tools
+[merge]
+	tool = meld
+[diff]
+    tool = difftastic
+[difftool]
+    prompt = false
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[pager]
+    difftool = true
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+[delta]
+    features = decorations
+    syntax-theme = Dracula
+    keep-plus-minus-markers = true
+    line-numbers = true
+    line-number-right-style = green
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+##
+## aliases
 [alias]
     acm     = ! git add -vA && git commit -m
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
@@ -49,6 +108,7 @@
     ruo     = remote update origin -v --prune # update local list of remote branches
     s       = status -sb
     f       = forgit
+    fe      = fetch -v
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
     ## forgit aliases
@@ -66,56 +126,4 @@
     frc     = forgit revert_commit
     frg     = forgit reset_head
     fss     = forgit stash_show
-[merge]
-	tool = meld
-[mergetool "vscode"]
-    cmd = code --wait $MERGED
-[diff]
-    tool = difftastic
-[difftool]
-    prompt = false
-[difftool "difftastic"]
-    cmd = difft "$LOCAL" "$REMOTE"
-[gpg]
-    program = gpg
-[pager]
-    difftool = true
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
-[interactive]
-    diffFilter = delta --color-only --features=interactive
-[delta]
-    features = decorations
-    syntax-theme = Dracula
-    keep-plus-minus-markers = true
-    line-numbers = true
-    line-number-right-style = green
-[delta "interactive"]
-    keep-plus-minus-markers = false
-[delta "decorations"]
-    commit-decoration-style = blue ol
-    commit-style = raw
-    file-style = omit
-    hunk-header-decoration-style = blue box
-    hunk-header-file-style = red
-    hunk-header-line-number-style = "#067a00"
-    hunk-header-style = file line-number syntax
-[credential "https://github.com"]
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[includeIf "gitdir:~/6RiverSystems/"]
-    path = ~/6RiverSystems/.gitconfig
-[init]
-	defaultBranch = main
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-[github]
-	user = ccb012100
-[push]
-	default = simple
-[url "git@github.com:"]
-	insteadof = https://github.com/
+##
