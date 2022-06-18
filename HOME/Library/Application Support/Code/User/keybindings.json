@@ -2482,10 +2482,6 @@
     "command": "todo-tree-view.focus"
   },
   {
-    "key": "ctrl+alt+j",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "shift+alt+n",
     "command": "cursorColumnSelectDown",
     "when": "textInputFocus"
@@ -3403,5 +3399,21 @@
   {
     "key": "ctrl+h ctrl+s",
     "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]

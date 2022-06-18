@@ -1,0 +1,7 @@
+[user]
+    name = Christopher Bocardo
+    email = ccb012100@users.noreply.github.com
+    signingkey = 0C186B9F
+[commit]
+    gpgsign = true
+	verbose = true
