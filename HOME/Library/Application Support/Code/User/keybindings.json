@@ -3415,5 +3415,10 @@
   {
     "key": "ctrl+0",
     "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
   }
 ]
