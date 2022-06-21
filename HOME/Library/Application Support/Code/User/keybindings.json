@@ -2570,7 +2570,7 @@
     "command": "bookmarks.listFromAllFiles"
   },
   {
-    "key": "ctrl+.",
+    "key": "ctrl+'",
     "command": "findJump.activate"
   },
   {

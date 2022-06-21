@@ -334,5 +334,6 @@
     "search.exclude": {
         "**/*.svg": true,
         "**/pnpm-lock.yaml": true
-    }
+    },
+    "workbench.colorTheme": "Panda Syntax"
 }
