@@ -1,15 +1,15 @@
 # zsh aliass
 
-# cd aliases
+## cd
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-# ls
+## ls
+# replace ls with exa
 alias ls='exa --git --icons'
 alias tree='exa --tree'
-
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -l'
@@ -19,38 +19,41 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 ## built-in tools
-alias aptup='sudo apt update && sudo apt upgrade'
-alias cls='clear'                           # clear screen
+# clear screen
+alias cls='clear'
 alias grep='grep --color=auto'
-alias lec='echo $?'                         # last exit code
-alias path="sed 's/:/\n/g' <<< '$PATH'"    # print $PATH in human-readable format
+# last exit code
+alias lec='echo $?'
+# print $PATH formatted as one entry per line
+alias path="sed 's/:/\n/g' <<< '$PATH'"
 
-# external tools
-alias c.='code .'                           # open current directory in VS Code
+## external tools
+# open current directory in VS Code
+alias c.='code .'
 alias difftastic='difft'
 alias g='git'
 alias gf='git forgit'
 alias gitconfig='nvim ~/.gitconfig'
-alias jq='jq -C'                            # colorize json
+# colorize json
+alias jq='jq -C'
+# prevent accidentally using npn instead of pnpm
 alias npm="echo \"use _pn/pnpm_\""
-alias pn='pnpm'
-alias powershell='pwsh'
 alias py='python3'
 alias r='ranger'
-alias ripgrep='rg'
 alias sesh='tmux new-session -A -s sesh'
 alias v='vim'
 
-# .zshrc
+## .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-# directory aliases
+## directory aliases
 export ccb=$HOME/ccb012100
 export dotfiles=$HOME/.dotfiles
 export dotemacs=$HOME/.emacs.d
 export notes=$HOME/ccb012100/notes
 export zhell=$HOME/zsh
 
-# global aliases
-alias -g zf='| fzf' # pipe into fzf
+## global aliases
+# pipe into fzf
+alias -g zf='| fzf'
