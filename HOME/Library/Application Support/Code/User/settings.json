@@ -1,5 +1,8 @@
 {
-    "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "HTML (Eex)"
+    ],
     "breadcrumbs.enabled": true,
     "editor.codeLens": false,
     "editor.fontFamily": "JetBrains Mono, Hack, Cascadia Code, Source Code Pro, Consolas, Roboto Mono, Ubuntu Mono, monospace",
@@ -18,17 +21,19 @@
         "*.conf": "editorconfig"
     },
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
         "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
         "**/*.js": {
             "when": "$(basename).ts"
         },
         "**/*.js.map": {
             "when": "$(basename)"
-        }
+        },
+        "**/CVS": true,
+        "**/node_modules": true,
+        "**/pnpm-lock.yaml": true
     },
     "files.trimTrailingWhitespace": true,
     "git.allowForcePush": true,
@@ -42,7 +47,9 @@
     "markdown.preview.fontFamily": "Hack, Roboto Mono, JetBrains Mono, Ubuntu Mono, Monospace",
     "markdownlint.config": {
         "MD013": false,
-        "MD024": { "siblings_only": true },
+        "MD024": {
+            "siblings_only": true
+        },
         "MD026": false
     },
     "prettier.printWidth": 140,
@@ -96,7 +103,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "git.autoStash": true,
-    "workbench.colorTheme": "Andromeda Colorizer",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "explorer.incrementalNaming": "smart",
     "editor.cursorSurroundingLines": 5,
@@ -160,7 +166,10 @@
             "icon": "terminal-powershell"
         },
         "Command Prompt": {
-            "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
             "args": [],
             "icon": "terminal-cmd"
         },
@@ -173,7 +182,9 @@
     "remote.WSL.debug": true,
     "redhat.telemetry.enabled": true,
     "markdown.preview.scrollEditorWithPreview": false,
-    "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
     "editor.bracketPairColorization.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.openEditors.sortOrder": "alphabetical",
@@ -214,15 +225,25 @@
     "workbench.settings.useSplitJSON": true,
     "audioCues.lineHasBreakpoint": "on",
     "audioCues.onDebugBreak": "on",
-    "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"], // using colors from Monokai pallette for RainbowTags
+    "rainbowTags.colors": [
+        "#F92672",
+        "#AE81FF",
+        "#A6E22E",
+        "#66D9EF"
+    ], // using colors from Monokai pallette for RainbowTags
     "workbench.editor.splitInGroupLayout": "vertical",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "rewrap.wrappingColumn": 120,
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        80,
+        120
+    ],
     "[csharp][markdown][javascript][typescript][json][html][rust]": {
-        "editor.rulers": [120]
+        "editor.rulers": [
+            120
+        ]
     },
     "[git-commit]": {
         "editor.rulers": [
@@ -237,18 +258,18 @@
     "editor.minimap.showSlider": "always",
     "todo-tree.general.statusBar": "tags",
     "todo-tree.general.tags": [
-      "BUG:",
-      "HACK:",
-      "FIXME:",
-      "TODO:",
-      "XXX",
-      "[ ]",
-      "[x]",
-      "REVIEW:"
+        "BUG:",
+        "HACK:",
+        "FIXME:",
+        "TODO:",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "REVIEW:"
     ],
     "todo-tree.filtering.excludeGlobs": [
-      "**/node_modules",
-      "**/.git"
+        "**/node_modules",
+        "**/.git"
     ],
     "todo-tree.filtering.ignoreGitSubmodules": true,
     "todo-tree.filtering.includeHiddenFiles": true,
@@ -258,7 +279,9 @@
     "todo-tree.tree.showCountsInTree": true,
     "[csv][tsv]": {
         "editor.insertSpaces": false,
-        "editor.rulers": [0]
+        "editor.rulers": [
+            0
+        ]
     },
     "[plaintext]": {
         "editor.insertSpaces": false
@@ -307,5 +330,9 @@
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "terminal.integrated.customGlyphs": false,
     "workbench.sideBar.location": "right",
-    "terminal.integrated.tabs.focusMode": "singleClick"
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "search.exclude": {
+        "**/*.svg": true,
+        "**/pnpm-lock.yaml": true
+    }
 }
