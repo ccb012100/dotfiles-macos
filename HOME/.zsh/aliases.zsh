@@ -31,6 +31,8 @@ alias path="sed 's/:/\n/g' <<< '$PATH'"
 # open current directory in VS Code
 alias c.='code .'
 alias difftastic='difft'
+alias e='emacs'
+alias emacs='emacsclient -nc -a=""'
 alias g='git'
 alias gf='git forgit'
 alias gitconfig='nvim ~/.gitconfig'
