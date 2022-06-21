@@ -54,7 +54,7 @@ export ccb=$HOME/ccb012100
 export dotfiles=$HOME/.dotfiles
 export dotemacs=$HOME/.emacs.d
 export notes=$HOME/ccb012100/notes
-export zhell=$HOME/zsh
+export zshell=$HOME/zsh
 
 ## global aliases
 # pipe into fzf
