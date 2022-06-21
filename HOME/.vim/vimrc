@@ -1,4 +1,5 @@
 "" Vim: place in ~/.vim/vimrc
+set nocompatible    " set nocompatible must be the first line in .vimrc
 scriptencoding utf-8
 filetype indent plugin on
 
@@ -32,9 +33,8 @@ set incsearch                   " search as characters are entered
 set laststatus=2                " always show statusline
 set lazyredraw
 set list                        " show whitespace
-set nocompatible                " set nocompatible must be the first line in .vimrc
 set nostartofline
-set nu rnu                      " toggle hybrid line numbers (`number relativenumber`)
+set number relativenumber       " toggle hybrid line numbers
 set number
 set rtp+=/usr/local/opt/fzf     " add fzf to runtimepath
 set ruler                       " displays cursor position
@@ -50,8 +50,8 @@ set title
 set ttimeoutlen=50              " keycode timeout length
 set viminfo+=n~/.vim/viminfo
 set visualbell
-set wildmenu                    " visual autocomplete for command menuh quick between modes
-set ww=<,>,h,l                  " wrap to previous/next line when cursor is at line start/end
+set wildmenu                    " visual autocomplete for the command menu
+set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
 "" set tmp file directories
 set backupdir=.backup/,~/.vim/.backup/,/tmp//
@@ -72,6 +72,37 @@ Plug 'kyoz/purify', { 'rtp': 'vim' }
 call plug#end()
 
 syntax enable
-let g:gruvbox_contrast_dark = 'hard'
-autocmd vimenter * ++nested colorscheme gruvbox
-set background=dark " Setting dark mode
+colorscheme purify
+
+""" The rest of these are copied straight from
+""" https://github.com/vim/vim/blob/master/runtime/defaults.vim
+
+" In many terminal emulators the mouse works just fine.  By enabling it you
+" can position the cursor, Visually select and scroll with the mouse.
+" Only xterm can grab the mouse events when using the shift key, for other
+" terminals use ":", select text and press Esc.
+if has('mouse')
+    if &term =~ 'xterm'
+        set mouse=a
+    else
+        set mouse=nvi
+    endif
+endif
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+" Revert with: ":delcommand DiffOrig".
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid, when inside an event handler
+" (happens when dropping a file on gvim) and for a commit message (it's
+" likely a different one than last time).
+autocmd BufReadPost *
+            \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+            \ |   exe "normal! g`\""
+            \ | endif
