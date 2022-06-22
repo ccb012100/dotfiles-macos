@@ -9,7 +9,7 @@
     "editor.fontLigatures": true,
     "editor.letterSpacing": 1,
     "editor.minimap.maxColumn": 60,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.suggest.localityBonus": true,
     "editor.wordWrap": "on",
     "files.associations": {
@@ -335,5 +335,5 @@
         "**/*.svg": true,
         "**/pnpm-lock.yaml": true
     },
-    "workbench.colorTheme": "Panda Syntax"
+    "workbench.colorTheme": "Happy Hipster"
 }
