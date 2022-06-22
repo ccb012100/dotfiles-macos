@@ -89,7 +89,7 @@
     b       = branch -v
     br      = branch --remote -v
     c       = commit
-    cb      = checkout -vB
+    cb      = checkout -B
     cm      = commit -m
     co      = checkout
     d       = diff
