@@ -732,11 +732,6 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "alt+6",
-    "command": "workbench.actions.view.problems",
-    "when": "workbench.panel.markers.view.active"
-  },
-  {
     "key": "shift+cmd+m",
     "command": "-workbench.actions.view.problems",
     "when": "workbench.panel.markers.view.active"
@@ -2302,10 +2297,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+3",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "alt+0",
     "command": "-workbench.action.lastEditorInGroup"
   },
@@ -2346,22 +2337,9 @@
     "command": "-workbench.action.openEditorAtIndex9"
   },
   {
-    "key": "alt+1",
-    "command": "workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
     "key": "ctrl+shift+e",
     "command": "-workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
-    "key": "alt+7",
-    "command": "workbench.view.extension.test"
-  },
-  {
-    "key": "alt+8",
-    "command": "nugetpackagemanagergui.view"
   },
   {
     "key": "alt+/",
@@ -2478,10 +2456,6 @@
     "command": "editor.action.transpose"
   },
   {
-    "key": "alt+5",
-    "command": "todo-tree-view.focus"
-  },
-  {
     "key": "shift+alt+n",
     "command": "cursorColumnSelectDown",
     "when": "textInputFocus"
@@ -2564,10 +2538,6 @@
   {
     "key": "ctrl+; p",
     "command": "bookmarks.jumpToPrevious"
-  },
-  {
-    "key": "alt+2",
-    "command": "bookmarks.listFromAllFiles"
   },
   {
     "key": "ctrl+'",
@@ -3351,14 +3321,6 @@
     "command": "bookmarks.listFromAllFiles"
   },
   {
-    "key": "alt+0",
-    "command": "workbench.files.action.focusOpenEditorsView"
-  },
-  {
-    "key": "alt+4",
-    "command": "outline.focus"
-  },
-  {
     "key": "cmd+4",
     "command": "outline.focus"
   },
@@ -3417,8 +3379,41 @@
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "shift+cmd+c",
-    "command": "-workbench.action.terminal.openNativeConsole",
-    "when": "!terminalFocus"
-  }
+    "key": "alt+6",
+    "command": "workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "alt+7",
+    "command": "workbench.view.extension.test"
+  },
+  {
+    "key": "alt+8",
+    "command": "nugetpackagemanagergui.view"
+  },
+  {
+    "key": "alt+5",
+    "command": "todo-tree-view.focus"
+  },
+  {
+    "key": "alt+0",
+    "command": "workbench.files.action.focusOpenEditorsView"
+  },
+  {
+    "key": "alt+4",
+    "command": "outline.focus"
+  },
+  {
+    "key": "alt+2",
+    "command": "bookmarks.listFromAllFiles"
+  },
 ]
