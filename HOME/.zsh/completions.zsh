@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 # Zsh auto-completion
 
 autoload -U compinit && compinit    # zsh-completions

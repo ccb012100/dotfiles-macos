@@ -1,4 +1,27 @@
-# zsh aliass
+#!/usr/bin/zsh
+# zsh aliases
+
+### built-in tools
+
+# easy way to call aliased commands
+alias ,=command
+alias back='cd -'
+alias c=cd
+alias cls=clear
+alias cp='cp -iv'
+alias ez='exec zsh'
+alias grep='grep --color=auto'
+alias his=history
+# last exit code
+alias lec='echo $?'
+alias mkdir='mkdir -v'
+alias mv='mv -iv'
+# print $PATH formatted as one entry per line
+alias path='sed "s/:/\n/g" <<< "$PATH"'
+alias paths='path | sort'
+alias rm='rm -I'
+alias rmdir='rmdir -v'
+alias uuid='uuidgen'
 
 ## cd
 alias ...='cd ../..'
@@ -8,9 +31,9 @@ alias ......='cd ../../../../..'
 
 ## ls
 # replace ls with exa
-alias ls='exa --git --icons'
+alias ls='exa --git --icons --group-directories-first'
 alias tree='exa --tree'
-alias l='ls'
+alias l=ls
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
@@ -18,44 +41,53 @@ alias lla='ls -la'
 alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
-## built-in tools
-# clear screen
-alias cls='clear'
-alias grep='grep --color=auto'
-# last exit code
-alias lec='echo $?'
-# print $PATH formatted as one entry per line
-alias path="sed 's/:/\n/g' <<< '$PATH'"
-
-## external tools
+### external tools
+alias brewup='brew upgrade'
 # open current directory in VS Code
 alias c.='code .'
-alias difftastic='difft'
-alias e='emacs'
+alias difftastic=difft
+alias e=emacs
+# start emacs server if it's not already running
 alias emacs='emacsclient -nc -a=""'
-alias g='git'
-alias gf='git forgit'
-alias gitconfig='nvim ~/.gitconfig'
+alias etty='emacsclient -nw'
+# show hidden files when doing fd search
+alias fd='fd -H'
+alias g=git
+# build the go project in the cwd
+alias gob='go build .'
+# run the go project in the cwd
+alias gor='go run .'
+alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
-# prevent accidentally using npn instead of pnpm
-alias npm="echo \"use _pn/pnpm_\""
-alias py='python3'
-alias r='ranger'
+alias kc='kubectl'
+alias nrb='npm run build'
+alias nrl='npm run lint'
+alias nrs='npm run start'
+alias nrt='npm run test'
+# run local version of ts-node
+alias nts='npx ts-node'
+alias prc='gh pr checkout'
+alias py=python3
+alias ran=ranger
+# verbatim search (i.e. disable regex)
+alias rgf='rg -F'
+# case-insensitive search
+alias rgi='rg -i'
+# keep making this typo for some reason
+alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
-alias v='vim'
+alias v=vim
 
 ## .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## directory aliases
-export ccb=$HOME/ccb012100
-export dotfiles=$HOME/.dotfiles
-export dotemacs=$HOME/.emacs.d
-export notes=$HOME/ccb012100/notes
-export zshell=$HOME/zsh
+## cd to directories
+alias ccb="cd $HOME/ccb012100"
+alias conf="cd $HOME/.config"
+alias dotf="cd $HOME/.dotfiles"
+alias dotemacs="cd $HOME/.emacs.d"
+alias notes="cd $HOME/ccb012100/notes"
+alias zshell="cd $HOME/.zsh"
 
-## global aliases
-# pipe into fzf
-alias -g zf='| fzf'

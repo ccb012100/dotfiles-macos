@@ -20,15 +20,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=213"
 # zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
 
-# forgit
-source $HOME/tools/forgit/forgit.plugin.zsh
-export PATH="$PATH:$FORGIT_INSTALL_DIR/bin"
-
 # show when running in a shell that was spawned by ranger
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 
 # starship
 eval "$(starship init zsh)"
+# set window title via starship
+function set_win_title(){
+    echo -ne "\033]0; $(realpath .) \007"
+}
+precmd_functions+=(set_win_title)
 
 # homebrew
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
@@ -40,3 +41,27 @@ eval "$(nodenv init -)"
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# set Ripgrep configuration file
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
+
+## ranger
+# show when running in a shell that was spawned by ranger
+if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
+
+# C-g to quit and cd into directory
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map <c-g> chain shell echo %d > "$tempfile"; quitall"
+    )
+
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
