@@ -15,6 +15,10 @@ sync_from_home() {
     rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/HOME/$2"
 }
 
+sync_file \
+    "/LIBRARY/LaunchDaemons/local.kmonad.plist" \
+    "LIBRARY/LaunchDaemons/"
+
 sync_from_home \
     ".zshrc" \
     ""
@@ -45,6 +49,10 @@ sync_from_home \
 
 sync_from_home \
     ".config/kitty" \
+    ".config/"
+
+sync_from_home \
+    ".config/kmonad" \
     ".config/"
 
 sync_from_home \

@@ -1,0 +1,49 @@
+;; config for Apple MacBook's built-in keyboard
+
+(defcfg
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
+  output (kext)
+  fallthrough true
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+(defalias
+  fn (around (layer-toggle function) fn) ;; fn key
+  cl (tap-hold-next 200 esc lctl) ;; CAPS LOCK -> ESC, L-CTRL
+
+  ;; home-row modifiers
+  a_d (tap-hold-next-release 200 d lalt)
+  a_k (tap-hold-next-release 200 k ralt)
+
+  c_j (tap-hold-next-release 200 j rctl)
+  c_f (tap-hold-next-release 200 f lctl)
+
+  m_s (tap-hold-next-release 200 s lmet)
+  m_l (tap-hold-next-release 200 l rmet)
+)
+
+(deflayer default
+  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  @cl  _    _    _    @c_f _    _    @c_j _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  @fn  _    _    _              _              _    _    _    _    _
+)
+
+(deflayer function
+  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _              _              _    _    _    _    _
+)
