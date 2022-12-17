@@ -30,11 +30,9 @@ function dot() {
 function gl() {
     case $1 in
             b )
-            shift
             go build .
         ;;
         r )
-            shift
             go run .
         ;;
         * )
@@ -46,19 +44,28 @@ function gl() {
 function cg() {
     case $1 in
         b )
-            shift
             cargo build
         ;;
         c )
-            shift
             cargo check
         ;;
         r )
-            shift
             cargo run
         ;;
         * )
             cargo "$@"
+        ;;
+    esac
+}
+# disable/enable trackpad
+function trackpad() {
+    case $1 in
+        on )
+            sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTrackpad.kext
+        ;;
+    off ) sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTrackpad.kext
+        ;;
+    * ) echo 'usage: trackpad [on|off]'
         ;;
     esac
 }
