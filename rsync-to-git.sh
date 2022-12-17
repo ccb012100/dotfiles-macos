@@ -9,7 +9,7 @@ sync_file() {
 }
 
 sync_from_home() {
-    rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/root/home/ccb012100/$2"
+    rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/HOME/$2"
 }
 
 sync_from_home \
