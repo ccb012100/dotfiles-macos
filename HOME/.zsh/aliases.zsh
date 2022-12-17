@@ -90,4 +90,6 @@ alias dotf="cd $HOME/.dotfiles"
 alias dotemacs="cd $HOME/.emacs.d"
 alias notes="cd $HOME/ccb012100/notes"
 alias zshell="cd $HOME/.zsh"
+alias zshconf='cd $HOME/.zsh/'
+alias zshconfig='cd $HOME/.zsh/'
 

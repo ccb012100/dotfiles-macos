@@ -57,15 +57,3 @@ function cg() {
         ;;
     esac
 }
-# disable/enable trackpad
-function trackpad() {
-    case $1 in
-        on )
-            sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTrackpad.kext
-        ;;
-    off ) sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTrackpad.kext
-        ;;
-    * ) echo 'usage: trackpad [on|off]'
-        ;;
-    esac
-}
