@@ -6,6 +6,7 @@ bash
 bat
 bdw-gc
 berkeley-db
+blurred
 broot
 brotli
 c-ares
@@ -41,6 +42,7 @@ google-cloud-sdk
 grep
 gron
 guile
+haskell-stack
 htop
 icu4c
 jansson
@@ -73,6 +75,7 @@ libxau
 libxcb
 libxdmcp
 libyaml
+llvm@12
 lua
 luajit
 luajit-openresty
@@ -81,6 +84,7 @@ lz4
 m4
 macos-trash
 meld
+micro
 mosh
 mpdecimal
 mpfr
@@ -99,6 +103,7 @@ npth
 oniguruma
 openldap
 openssl@1.1
+openssl@3
 p11-kit
 pcre
 pcre2
@@ -106,7 +111,7 @@ perl
 pinentry
 pinentry-mac
 pkg-config
-prdsql
+popt
 protobuf
 python@3.10
 python@3.9
@@ -114,6 +119,7 @@ ranger
 readline
 rectangle
 ripgrep
+rsync
 rtmpdump
 ruby
 screenresolution
@@ -132,6 +138,7 @@ visual-studio-code
 watch
 xh
 xorgproto
+xxhash
 xz
 zsh
 zsh-autosuggestions
