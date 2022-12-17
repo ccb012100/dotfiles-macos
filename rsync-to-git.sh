@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+### NOTE: must install rsync via homebrew first!
+### The Mac version is outdated and doesn't have the --protect-args flag
+
 gitdir="$HOME/.dotfiles"
 
 # add -n,--dry-run flag if testing
