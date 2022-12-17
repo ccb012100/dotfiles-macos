@@ -20,6 +20,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=213"
 # zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
 
+source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # show when running in a shell that was spawned by ranger
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 
