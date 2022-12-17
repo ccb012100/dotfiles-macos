@@ -23,8 +23,8 @@ DISABLE_AUTO_TITLE="true"
 
 ## zsh history
 HISTFILE="$HOME"/.zsh_history
-HISTSIZE=50000
-SAVEHIST=50000
+HISTSIZE=10000
+SAVEHIST=100000
 setopt inc_append_history
 setopt share_history
 setopt hist_expire_dups_first
