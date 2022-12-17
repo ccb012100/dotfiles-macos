@@ -5811,6 +5811,8 @@
 	<integer>100</integer>
 	<key>LeftCommand</key>
 	<integer>7</integer>
+	<key>LeftOption</key>
+	<integer>2</integer>
 	<key>MaxVertically</key>
 	<false/>
 	<key>MiddleClickClosesTab</key>
@@ -8064,6 +8066,8 @@
 	<false/>
 	<key>RightCommand</key>
 	<integer>8</integer>
+	<key>RightOption</key>
+	<integer>3</integer>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>SensitiveScrollWheel</key>
