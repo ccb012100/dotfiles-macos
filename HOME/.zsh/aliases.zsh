@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # zsh aliases
 
 ### built-in tools
@@ -42,6 +42,7 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 ### external tools
+alias b=bat
 alias brewup='brew upgrade'
 # open current directory in VS Code
 alias c.='code .'
@@ -60,14 +61,12 @@ alias gor='go run .'
 alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
-alias kc='kubectl'
 alias nrb='npm run build'
 alias nrl='npm run lint'
 alias nrs='npm run start'
 alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
-alias prc='gh pr checkout'
 alias py=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
@@ -83,11 +82,12 @@ alias v=vim
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## cd to directories
+## cd to directories 
 alias ccb="cd $HOME/ccb012100"
 alias conf="cd $HOME/.config"
 alias dotf="cd $HOME/.dotfiles"
 alias dotemacs="cd $HOME/.emacs.d"
+alias dotz="cd $HOME/.zsh"
 alias notes="cd $HOME/ccb012100/notes"
 alias zshell="cd $HOME/.zsh"
 alias zshconf='cd $HOME/.zsh/'
