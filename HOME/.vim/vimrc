@@ -63,16 +63,8 @@ set undodir=.undo/,~/.vim/.undo/,/tmp//
 autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
-call plug#begin()
-
-"" colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
-
-call plug#end()
-
 syntax enable
-colorscheme purify
+colorscheme lunaperche
 
 """ The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
