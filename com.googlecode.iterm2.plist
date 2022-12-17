@@ -8090,7 +8090,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.19156686134708736</real>
 	<key>StatusBarPosition</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>SwitchTabModifier</key>
