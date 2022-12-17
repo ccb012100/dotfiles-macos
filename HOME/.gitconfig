@@ -6,7 +6,8 @@
 	excludesfile = ~/.config/git/ignore
 [user]
     name = Christopher Bocardo
-    email = 97636+ccb012100@users.noreply.github.com
+    email = 397636+ccb012100@users.noreply.github.com
+	signingkey = 9B5FBAC67F099289
 [gpg]
     program = gpg
 	format = ssh
