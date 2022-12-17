@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # Zsh auto-completion
 
 autoload -U compinit && compinit    # zsh-completions
