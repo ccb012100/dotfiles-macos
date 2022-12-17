@@ -25,64 +25,72 @@ sync_from_home \
 
 sync_from_home \
     ".config/bat/bat.conf" \
-    ".config/bat"
+    ".config/bat/"
 
 sync_from_home \
     ".config/broot/conf.hjson" \
-    ".config/broot"
+    ".config/broot/"
 
 sync_from_home \
     ".config/git" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".config/karabiner/karabiner.json" \
-    ".config/karabiner"
+    ".config/karabiner/"
 
 sync_from_home \
     ".config/karabiner/assets" \
-    ".config/karabiner"
+    ".config/karabiner/"
 
 sync_from_home \
     ".config/kitty" \
-    ".config"
+    ".config/"
+
+sync_from_home \
+    ".config/micro/bindings.json" \
+    ".config/micro/"
+
+sync_from_home \
+    ".config/micro/settings.json" \
+    ".config/micro/"
 
 sync_from_home \
     ".config/ranger/rc.conf" \
-    ".config/ranger"
+    ".config/ranger/"
 
 sync_from_home \
     ".config/ripgreprc" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".config/starship.toml" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".vim/vimrc" \
-    ".vim"
+    ".vim/"
 
 sync_from_home \
     ".zsh/aliases.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/completions.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/funcs.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/fzf_config.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/tools.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/unalias.zsh" \
-    ".zsh"
+    ".zsh/"
