@@ -29,6 +29,7 @@
     dt      = difftool
     dts     = difftool --staged
     f       = fetch
+    fa      = fetch --all
     fp      = fetch --prune
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     # show last commit with diffstat
@@ -41,6 +42,7 @@
     main    = checkout main
     master  = checkout master
     pl      = pull
+    pla     = pull --all
     ps      = push
     psf     = push -v --force-with-lease
     # bypass pre-push hook
