@@ -58,3 +58,7 @@ source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
 source "$HOME"/ccb012100/starred-music/search.sh
+source "$HOME"/.local/zsh-local-config.zsh
+source "$HOME"/ccb012100/starred-music/search.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
