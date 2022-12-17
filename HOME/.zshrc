@@ -57,5 +57,4 @@ source "$HOME"/.zsh/funcs.zsh
 source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
-source "$HOME"/.local/zsh-local-config.zsh
 source "$HOME"/ccb012100/starred-music/search.sh
