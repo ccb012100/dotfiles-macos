@@ -2,6 +2,10 @@
 
 ### NOTE: must install rsync via homebrew first!
 ### The Mac version is outdated and doesn't have the --protect-args flag
+if [[ $(which rsync) != '/opt/homebrew/bin/rsync' ]]; then
+    echo "ERROR: you don't have rsync installed via homebrew! Run \`brew install rsync\`"
+    exit
+fi
 
 gitdir="$HOME/.dotfiles"
 
@@ -51,11 +55,6 @@ sync_from_home \
     ".config/kitty" \
     ".config/"
 
-sync_from_home \
-    ".config/kmonad" \
-    ".config/"
-
-sync_from_home \
     ".config/micro/bindings.json" \
     ".config/micro/"
 
