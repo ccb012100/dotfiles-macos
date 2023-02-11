@@ -78,11 +78,21 @@ alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
+## zsh-z
+za='z --add' # add directory to db
+zc='z -c' # only match subdirs of pwd
+ze='z -e' # echo best match without jumping
+zl='z -l' # list matches without jumping
+zr='z -r' # match by rank
+zt='z -t' # match by time
+zt='z -x' # remove directory from db (defaults to pwd)
+zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
+
 ## .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## cd to directories 
+## cd to directories
 alias ccb="cd $HOME/ccb012100"
 alias conf="cd $HOME/.config"
 alias dotf="cd $HOME/.dotfiles"
@@ -92,4 +102,3 @@ alias notes="cd $HOME/ccb012100/notes"
 alias zshell="cd $HOME/.zsh"
 alias zshconf='cd $HOME/.zsh/'
 alias zshconfig='cd $HOME/.zsh/'
-
