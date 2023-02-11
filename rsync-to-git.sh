@@ -40,6 +40,10 @@ sync_from_home \
     ".config/broot/"
 
 sync_from_home \
+    ".config/gh/config.yml" \
+    ".config/gh/"
+
+sync_from_home \
     ".config/git" \
     ".config/"
 
