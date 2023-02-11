@@ -59,6 +59,7 @@ sync_from_home \
     ".config/kitty" \
     ".config/"
 
+sync_from_home \
     ".config/micro/bindings.json" \
     ".config/micro/"
 
