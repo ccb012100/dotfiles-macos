@@ -24,6 +24,10 @@ sync_from_home() {
 #    "LIBRARY/LaunchDaemons/"
 
 sync_from_home \
+    "Library/Application Support/qmk/qmk.ini" \
+    "LIBRARY/Application Support/qmk/"
+
+sync_from_home \
     ".zshrc" \
     ""
 
