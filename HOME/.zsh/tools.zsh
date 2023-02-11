@@ -7,7 +7,7 @@ eval $(/opt/homebrew/bin/brew shellenv)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## broot
-source /Users/christopherbocardo/.config/broot/launcher/bash/br
+source /Users/cbocardo/.config/broot/launcher/bash/br
 
 ## zsh-completions
 FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -37,3 +37,5 @@ precmd_functions+=(set_win_title)
 
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
+
+source /Users/cbocardo/tools/zsh-z/zsh-z.plugin.zsh
