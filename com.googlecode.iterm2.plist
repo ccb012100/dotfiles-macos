@@ -5700,6 +5700,28 @@
 			<key>Version</key>
 			<integer>2</integer>
 		</dict>
+		<key>0x3c-0x60000-0x2b</key>
+		<dict>
+			<key>Action</key>
+			<integer>39</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x3e-0x60000-0x2f</key>
+		<dict>
+			<key>Action</key>
+			<integer>32</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
 		<key>0x40-0x120000-0x13</key>
 		<dict>
 			<key>Action</key>
@@ -5711,6 +5733,61 @@
 			<key>Version</key>
 			<integer>2</integer>
 		</dict>
+		<key>0x48-0x60000-0x4</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x4a-0x60000-0x26</key>
+		<dict>
+			<key>Action</key>
+			<integer>30</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x4b-0x60000-0x28</key>
+		<dict>
+			<key>Action</key>
+			<integer>31</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x54-0x60000-0x11</key>
+		<dict>
+			<key>Action</key>
+			<integer>27</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x56-0x60000-0x9</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
 		<key>0x60-0x40000-0x32</key>
 		<dict>
 			<key>Action</key>
@@ -5719,28 +5796,6 @@
 			<string></string>
 			<key>Text</key>
 			<string></string>
-		</dict>
-		<key>0x6a-0x100000-0x26</key>
-		<dict>
-			<key>Action</key>
-			<integer>30</integer>
-			<key>Escaping</key>
-			<integer>2</integer>
-			<key>Text</key>
-			<string></string>
-			<key>Version</key>
-			<integer>2</integer>
-		</dict>
-		<key>0x6b-0x100000-0x28</key>
-		<dict>
-			<key>Action</key>
-			<integer>31</integer>
-			<key>Escaping</key>
-			<integer>2</integer>
-			<key>Text</key>
-			<string></string>
-			<key>Version</key>
-			<integer>2</integer>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -8076,6 +8131,8 @@
 	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>Snippets</key>
