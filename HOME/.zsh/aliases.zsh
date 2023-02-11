@@ -83,14 +83,14 @@ alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
 ## zsh-z
-za='z --add' # add directory to db
-zc='z -c' # only match subdirs of pwd
-ze='z -e' # echo best match without jumping
-zl='z -l' # list matches without jumping
-zr='z -r' # match by rank
-zt='z -t' # match by time
-zt='z -x' # remove directory from db (defaults to pwd)
-zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
+alias za='z --add' # add directory to db
+alias zc='z -c' # only match subdirs of pwd
+alias ze='z -e' # echo best match without jumping
+alias zl='z -l' # list matches without jumping
+alias zr='z -r' # match by rank
+alias zt='z -t' # match by time
+alias zt='z -x' # remove directory from db (defaults to pwd)
+alias zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
 
 ## .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
