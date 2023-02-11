@@ -54,6 +54,10 @@ alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g=git
+alias gd='git d'
+alias gf='git f'
+alias gs='git s'
+alias gl='git l'
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -92,13 +96,3 @@ zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## cd to directories
-alias ccb="cd $HOME/ccb012100"
-alias conf="cd $HOME/.config"
-alias dotf="cd $HOME/.dotfiles"
-alias dotemacs="cd $HOME/.emacs.d"
-alias dotz="cd $HOME/.zsh"
-alias notes="cd $HOME/ccb012100/notes"
-alias zshell="cd $HOME/.zsh"
-alias zshconf='cd $HOME/.zsh/'
-alias zshconfig='cd $HOME/.zsh/'
