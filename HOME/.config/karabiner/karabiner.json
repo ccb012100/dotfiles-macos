@@ -17,11 +17,11 @@
                 },
                 "rules": [
                     {
-                        "description": "Map CAPSLOCK to Hyper when held, escape if tapped",
+                        "description": "Map ESC to Meh when held, ESC if tapped",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "caps_lock",
+                                    "key_code": "escape",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -35,9 +35,9 @@
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "key_code": "left_command",
+                                        "key_code": "left_control",
                                         "modifiers": [
-                                            "left_control",
+                                            "left_shift",
                                             "left_option"
                                         ]
                                     }
@@ -47,11 +47,11 @@
                         ]
                     },
                     {
-                        "description": "Change spacebar to control if pressed with other keys, to spacebar if pressed alone.",
+                        "description": "Change CAPS to L_Ctrl if pressed with other keys, to ESC if pressed alone.",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "spacebar",
+                                    "key_code": "caps_lock",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -65,7 +65,7 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "spacebar"
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
