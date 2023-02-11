@@ -1,22 +1,27 @@
 # $HOME/.gitconfig
 [core]
     editor = vim
-    autocrlf = input
+	autocrlf = input
     filemode = false
 	excludesfile = ~/.config/git/ignore
+    #hooksPath = ~/.config/git/hooks
 [user]
     name = Christopher Bocardo
     email = 397636+ccb012100@users.noreply.github.com
-	signingkey = 9B5FBAC67F099289
+	signingkey = /Users/cbocardo/.ssh/id_ed25519.pub
 [gpg]
     program = gpg
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /Users/cbocardo/.ssh/allowed_signers
 [commit]
+    gpgsign = true
 	verbose = true
 [pull]
     ff = only
     rebase = true
 [push]
-	default = simple
+    default = simple
     autoSetupRemote = true
 [fetch]
     prune = true
