@@ -64,12 +64,12 @@ sync_from_home \
     ".config/"
 
 sync_from_home \
-    ".config/micro/bindings.json" \
+    ".config/micro/settings.json" \
     ".config/micro/"
 
 sync_from_home \
-    ".config/micro/settings.json" \
-    ".config/micro/"
+    ".config/pgcli/config" \
+    ".config/pgcli/"
 
 sync_from_home \
     ".config/ranger/rc.conf" \
