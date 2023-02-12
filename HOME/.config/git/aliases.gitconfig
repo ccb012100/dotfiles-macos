@@ -1,14 +1,18 @@
 ## aliases
 [alias]
-    a       = add
+    aa      = add --all
+    # add all tracked files and commit
+    acm     = ! git add --update && git commit -m
     # add all tracked and untracked files and commit
-    acm     = ! git add --all && git commit -m
-    ai      = add --interactive
+    aacm    = ! git add --all && git commit -m
+    ai      = add --all --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+    au      = add --update
     amend   = commit --amend
-    b       = branch --list
+    b       = branch
     back    = checkout -
     bd      = branch --delete
+    bl      = branch --list
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
@@ -20,6 +24,7 @@
     co      = checkout
     cob     = checkout -b
     cof     = checkout --force
+    cp      = cherry-pick
     d       = diff
     # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
@@ -29,29 +34,43 @@
     dt      = difftool
     dts     = difftool --staged
     f       = fetch
-    fa      = fetch --all
-    fp      = fetch --prune
+    # update local main branch to match origin
+    fm      = fetch origin main:main
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     # show last commit with diffstat
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
+    ln      = log -n
     # show diffs
     lp      = log --patch
     # show last commit with diff
     lp1     = log --patch -1
+    m       = merge
+    ma      = merge --abort
+    mc      = merge --continue
     main    = checkout main
     master  = checkout master
-    pl      = pull
-    pla     = pull --all
+    pa      = pull --autostash
+    p       = pull
+    pr      = pull --rebase
+    pra     = pull --rebase --autostash
     ps      = push
     psf     = push -v --force-with-lease
     # bypass pre-push hook
     psnv    = push -v --no-verify
-    pub     = push -v --set-upstream origin HEAD
-    # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    publish = push -v --set-upstream origin HEAD
+    r       = rebase
+    ra      = rebase --abort
+    rc      = rebase --continue
     ri      = rebase --interactive
+    resets  = reset --soft
+    reseth  = reset --hard
+    rest    = restore
+    rests   = restore --staged
     s       = status
     # create new branch and switch to it
-    sc      = switch --create
+    swc     = switch --create
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
+    # update local branch from origin without checking it out
+    update = ! git fetch origin $1:$1
