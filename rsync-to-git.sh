@@ -36,6 +36,10 @@ sync_from_home \
     ""
 
 sync_from_home \
+    ".local/NOTES.code-workspace" \
+    ".local/"
+
+sync_from_home \
     ".gitconfig" \
     ""
 
