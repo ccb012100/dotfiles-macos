@@ -20,16 +20,20 @@ sync_from_home() {
 }
 
 #sync_file \
-#    "/LIBRARY/LaunchDaemons/local.kmonad.plist" \
-#    "LIBRARY/LaunchDaemons/"
+#    "/Library/LaunchDaemons/local.kmonad.plist" \
+#    "Library/LaunchDaemons/"
 
 sync_from_home \
     "Library/Application Support/Alfred/Alfred.alfredpreferences/preferences" \
-    "LIBRARY/Application Support/Alfred/Alfred.alfredpreferences/"
+    "Library/Application Support/Alfred/Alfred.alfredpreferences/"
 
 sync_from_home \
     "Library/Application Support/qmk/qmk.ini" \
-    "LIBRARY/Application Support/qmk/"
+    "Library/Application Support/qmk/"
+
+sync_from_home \
+    "Library/Application Support/Code/User/keybindings.json" \
+    "Library/Application Support/Code/User/"
 
 sync_from_home \
     ".zshrc" \
