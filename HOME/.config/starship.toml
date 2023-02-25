@@ -13,7 +13,7 @@ $character"""
 style = "blue"
 
 [character]
-success_symbol = "[❯](purple)"
+success_symbol = "[\\$](green)"
 error_symbol = "[❯](red)"
 vicmd_symbol = "[❮](green)"
 
