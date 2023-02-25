@@ -9,7 +9,7 @@ local SWbindings = {
 spoon.hs_select_window:bindHotkeys(SWbindings)
 
 -- Reload config
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "h", function()
-    hs.reload()
-    hs.console.clearConsole()
-end)
+--hs.hotkey.bind({"cmd", "alt", "ctrl"}, "h", function()
+--    hs.reload()
+--    hs.console.clearConsole()
+--end)
