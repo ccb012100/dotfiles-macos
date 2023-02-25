@@ -55,9 +55,11 @@ alias etty='emacsclient -nw'
 alias fd='fd -H'
 alias g=git
 alias gd='git d'
+alias gds='git ds'
 alias gf='git f'
-alias gs='git s'
 alias gl='git l'
+alias gp='git pull'
+alias gs='git s'
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
