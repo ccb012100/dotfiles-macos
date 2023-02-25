@@ -1,8 +1,8 @@
 ## diff/merge tools
 [merge]
-	tool = vscode
+	tool = meld
 [diff]
-    tool = difftastic
+    tool = meld
 [difftool]
     prompt = false
 [interactive]
@@ -33,3 +33,7 @@
     hunk-header-file-style = red
     hunk-header-line-number-style = "#067a00"
     hunk-header-style = file line-number syntax
+[difftool "meld"]
+    cmd = meld "$REMOTE" "$LOCAL"
+[mergetool "meld"]
+    cmd = meld "$REMOTE" "$BASE" "$LOCAL" --output "$MERGED"

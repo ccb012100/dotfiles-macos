@@ -38,4 +38,4 @@ precmd_functions+=(set_win_title)
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
-source /Users/cbocardo/tools/zsh-z/zsh-z.plugin.zsh
+eval "$(zoxide init zsh)"

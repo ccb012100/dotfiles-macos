@@ -23,8 +23,8 @@ DISABLE_AUTO_TITLE="true"
 
 ## zsh history
 HISTFILE="$HOME"/.zsh_history
-HISTSIZE=10000
-SAVEHIST=100000
+HISTSIZE=50000
+SAVEHIST=50000
 setopt inc_append_history
 setopt share_history
 setopt hist_expire_dups_first
@@ -57,8 +57,11 @@ source "$HOME"/.zsh/funcs.zsh
 source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
-source "$HOME"/ccb012100/playlist-search/search.sh
 source "$HOME"/.local/zsh-local-config.zsh
 
+source "$HOME"/ccb012100/playlist-search/search.sh
+alias sp="$HOME/ccb012100/playlist-search/search.sh"
+alias spalb='sp --type album'
+alias spd='sp --sort date'
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source /Users/cbocardo/.config/broot/launcher/bash/br

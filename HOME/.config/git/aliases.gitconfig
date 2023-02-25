@@ -20,6 +20,7 @@
     ca      = commit --amend
     can     = commit --amend --no-edit
     cm      = commit -m
+    cmnv    = commit -m --no-verify
     # create and checkout a new branch
     co      = checkout
     cob     = checkout -b
@@ -50,8 +51,10 @@
     mc      = merge --continue
     main    = checkout main
     master  = checkout master
+    mt      = mergetool
     pa      = pull --autostash
     p       = pull
+    pop     = stash pop
     pr      = pull --rebase
     pra     = pull --rebase --autostash
     ps      = push

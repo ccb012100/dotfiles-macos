@@ -31,7 +31,7 @@ alias ......='cd ../../../../..'
 
 ## ls
 # replace ls with exa
-alias ls='exa --git --icons --group-directories-first'
+alias ls='exa --git --icons --group-directories-first -F'
 alias tree='exa --tree'
 alias l=ls
 alias la='ls -a'
@@ -62,7 +62,6 @@ alias gl='git l'
 alias gob='go build .'
 # run the go project in the cwd
 alias gor='go run .'
-alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
 alias nrb='npm run build'
@@ -72,7 +71,7 @@ alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
 alias py=python3
-alias ran=ranger
+alias python=python3
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
 # case-insensitive search
@@ -91,8 +90,3 @@ alias zr='z -r' # match by rank
 alias zt='z -t' # match by time
 alias zt='z -x' # remove directory from db (defaults to pwd)
 alias zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
-
-## .zshrc
-alias zedit="$EDITOR $HOME/.zshrc"
-alias zsource="source $HOME/.zshrc"
-
