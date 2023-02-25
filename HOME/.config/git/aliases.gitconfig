@@ -1,5 +1,6 @@
 ## aliases
 [alias]
+    a       = add
     aa      = add --all
     # add all tracked files and commit
     acm     = ! git add --update && git commit -m
@@ -66,10 +67,9 @@
     ra      = rebase --abort
     rc      = rebase --continue
     ri      = rebase --interactive
-    resets  = reset --soft
-    reseth  = reset --hard
-    rest    = restore
-    rests   = restore --staged
+    rsoft   = reset --soft
+    rh      = reset --hard
+    rs      = restore --staged
     s       = status
     # create new branch and switch to it
     swc     = switch --create
