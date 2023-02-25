@@ -40,6 +40,10 @@ sync_from_home \
     ""
 
 sync_from_home \
+    ".hammerspoon/init.lua" \
+    ".hammerspoon/"
+
+sync_from_home \
     ".config/bat/bat.conf" \
     ".config/bat/"
 
