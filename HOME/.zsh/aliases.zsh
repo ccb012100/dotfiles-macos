@@ -59,6 +59,7 @@ alias gds='git ds'
 alias gf='git f'
 alias gl='git l'
 alias gp='git pull'
+alias gps='git push'
 alias gs='git s'
 # build the go project in the cwd
 alias gob='go build .'
