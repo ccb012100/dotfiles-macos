@@ -148,10 +148,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+j",
-    "command": "-workbench.action.togglePanel"
-  },
-  {
     "key": "ctrl+h ctrl+t",
     "command": "-workbench.action.selectTheme"
   },
@@ -2563,7 +2559,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+l m",
+    "key": "ctrl+l ctrl+m",
     "command": "markdown.showPreviewToSide"
   },
   {
@@ -3345,14 +3341,6 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+z",
-    "command": "workbench.action.togglePanel"
-  },
-  {
-    "key": "cmd+j",
-    "command": "-workbench.action.togglePanel"
-  },
-  {
     "key": "cmd+j",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -3508,5 +3496,25 @@
     "key": "backspace",
     "command": "-findJump.backspace",
     "when": "editorTextFocus && findJumpActive"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+x right",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+x left",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+x down",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+x up",
+    "command": "workbench.action.toggleEditorVisibility"
   }
 ]
