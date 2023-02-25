@@ -2,5 +2,5 @@
 
 ## AltTab
 
-Run the command `defaults read com.lwouis.alt-tab-macos >| AltTab.json`
+Run the command `defaults export com.lwouis.alt-tab-macos >| AltTab.plist`
 
