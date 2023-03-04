@@ -35,11 +35,11 @@ sync_from_home \
     "Library/Application Support/Code/User/keybindings.json" \
     "Library/Application Support/Code/User/"
 
-sync_from_home Library/Application\ Support/sioyek/{keys,prefs}_user.config "Library/Application Support/sioyek/"
+sync_from_home "Library/Application Support/sioyek/prefs_user.config" \
+    "Library/Application Support/sioyek/"
 
-# sync_from_home \
-    # Library/Application\ Support/sioyek/prefs_user.config" \
-    # "Library/Application Support/sioyek/"
+sync_from_home "Library/Application Support/sioyek/keys_user.config" \
+    "Library/Application Support/sioyek/"
 
 sync_from_home \
     ".zshrc" \
