@@ -2093,10 +2093,6 @@
     "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
   },
   {
-    "key": "alt+s",
-    "command": "editor.action.startFindReplaceAction"
-  },
-  {
     "key": "shift+alt+right",
     "command": "-editor.action.smartSelect.expand",
     "when": "editorTextFocus"
@@ -2729,7 +2725,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+s",
+    "key": "cmd+r",
     "command": "editor.action.startFindReplaceAction"
   },
   {
@@ -3912,5 +3908,10 @@
   {
     "key": "ctrl+l m",
     "command": "markdown.extension.toc.update"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus && findInputFocussed"
   }
 ]

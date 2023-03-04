@@ -35,6 +35,12 @@ sync_from_home \
     "Library/Application Support/Code/User/keybindings.json" \
     "Library/Application Support/Code/User/"
 
+sync_from_home Library/Application\ Support/sioyek/{keys,prefs}_user.config "Library/Application Support/sioyek/"
+
+# sync_from_home \
+    # Library/Application\ Support/sioyek/prefs_user.config" \
+    # "Library/Application Support/sioyek/"
+
 sync_from_home \
     ".zshrc" \
     ""
@@ -82,6 +88,10 @@ sync_from_home \
 sync_from_home \
     ".config/micro/settings.json" \
     ".config/micro/"
+
+sync_from_home \
+    ".config/neofetch/config.conf" \
+    ".config/neofetch/"
 
 sync_from_home \
     ".config/pgcli/config" \
