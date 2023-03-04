@@ -3908,5 +3908,9 @@
   {
     "key": "ctrl+cmd+right",
     "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+l m",
+    "command": "markdown.extension.toc.update"
   }
 ]
