@@ -10,7 +10,7 @@ indicator_color: #DFFF00
 hint_bgcolor: #282828
 hint_chars: asdfjkl;
 hint_fgcolor: #FFB000
-hint_font: DinaRemasterII
+hint_font: DEC Terminal Modern
 hint: H x
 
 # scroll
