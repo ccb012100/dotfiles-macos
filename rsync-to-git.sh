@@ -35,7 +35,7 @@ sync_from_home \
     "Library/Application Support/Code/User/keybindings.json" \
     "Library/Application Support/Code/User/"
 
-sync_from_home "Library/Application Support/sioyek/prefs_user.config" \
+sync_from_home Library/Application\ Support/sioyek/{prefs,keys}_user.config \
     "Library/Application Support/sioyek/"
 
 sync_from_home "Library/Application Support/sioyek/keys_user.config" \
@@ -117,26 +117,6 @@ sync_from_home \
     ".vim/vimrc" \
     ".vim/"
 
-sync_from_home \
-    ".zsh/aliases.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/completions.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/funcs.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/fzf_config.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/tools.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/unalias.zsh" \
-    ".zsh/"
+rsync --recursive --times --progress --protect-args \
+    ~/.zsh/{aliases,completions,funcs,fzf_config,tools,unalias}.zsh \
+    "$gitdir/HOME/.zsh/"
