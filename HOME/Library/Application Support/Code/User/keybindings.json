@@ -2475,11 +2475,11 @@
     "command": "textPowerTools.changeCaseToSwapCase"
   },
   {
-    "key": "ctrl+c n",
+    "key": "ctrl+x n",
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+c p",
+    "key": "ctrl+x p",
     "command": "workbench.action.previousEditor"
   },
   {
@@ -2617,10 +2617,6 @@
   {
     "key": "shift+cmd+]",
     "command": "-workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+x n",
-    "command": "memo.openDailyNote"
   },
   {
     "key": "cmd+v",
@@ -3886,19 +3882,31 @@
     "when": "customTreeView && listFocus && !inputFocus"
   },
   {
-    "key": "shift+alt+up",
-    "command": "workbench.action.moveEditorToAboveGroup"
+    "key": "alt+cmd+up",
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+down",
-    "command": "workbench.action.moveEditorToBelowGroup"
+    "key": "alt+cmd+down",
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+left",
-    "command": "workbench.action.moveEditorToLeftGroup"
+    "key": "alt+cmd+left",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+right",
-    "command": "workbench.action.moveEditorToRightGroup"
+    "key": "alt+cmd+right",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
   }
 ]
