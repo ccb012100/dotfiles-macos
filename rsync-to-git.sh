@@ -100,6 +100,10 @@ sync_from_home \
     ".config/"
 
 sync_from_home \
+    ".config/warpd/config" \
+    ".config/warpd/"
+
+sync_from_home \
     ".vim/vimrc" \
     ".vim/"
 

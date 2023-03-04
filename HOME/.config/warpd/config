@@ -1,0 +1,32 @@
+cursor_color: #00FF00
+history: ; h
+
+# indicator
+indicator: topright
+indicator_size: 20
+indicator_color: #DFFF00
+
+# hints
+hint_bgcolor: #282828
+hint_chars: asdfjkl;
+hint_fgcolor: #FFB000
+hint_font: DinaRemasterII
+hint: H x
+
+# scroll
+scroll_down: f d n
+scroll_up: b u p
+
+# cursor movement in Normal mode
+down: k
+left: j
+right: l
+up: i
+
+# grid
+grid_border_color: #00ff00
+grid_color: #00ff00
+grid_down: k
+grid_left: j
+grid_right: l
+grid_up: i
