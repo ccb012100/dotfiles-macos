@@ -53,14 +53,6 @@ alias emacs='emacsclient -nc -a=""'
 alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
-alias g=git
-alias gd='git d'
-alias gds='git ds'
-alias gf='git f'
-alias gl='git l'
-alias gp='git pull'
-alias gps='git push'
-alias gs='git s'
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -84,12 +76,17 @@ alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
-## zsh-z
-alias za='z --add' # add directory to db
-alias zc='z -c' # only match subdirs of pwd
-alias ze='z -e' # echo best match without jumping
-alias zl='z -l' # list matches without jumping
-alias zr='z -r' # match by rank
-alias zt='z -t' # match by time
-alias zt='z -x' # remove directory from db (defaults to pwd)
-alias zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
+##git
+alias g=git
+alias ga='git a'
+alias gaa='git aa'
+alias gacm='git acm'
+alias gc='git c'
+alias gcm='git cm'
+alias gd='git d'
+alias gds='git ds'
+alias gf='git f'
+alias gl='git l'
+alias gp='git pull'
+alias gps='git push'
+alias gs='git s'

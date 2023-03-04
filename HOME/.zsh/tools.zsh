@@ -3,6 +3,9 @@
 
 ## homebrew
 eval $(/opt/homebrew/bin/brew shellenv)
+# prefer GNU coreutils over BSD variants
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export MANPATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnuman:$MANPATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

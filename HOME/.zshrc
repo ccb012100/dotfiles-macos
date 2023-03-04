@@ -65,3 +65,6 @@ alias spalb='sp --type album'
 alias spd='sp --sort date'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# point to full path b/c the GNU version of ssh-add doesn't have --apple-use-keychain flag
+/usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519
