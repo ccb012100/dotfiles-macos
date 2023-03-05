@@ -168,6 +168,18 @@
     "command": "-workbench.action.focusLeftGroup"
   },
   {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+c h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
     "key": "ctrl+,",
     "command": "-workbench.action.openSettings"
   },
@@ -282,10 +294,6 @@
   {
     "key": "cmd+k cmd+right",
     "command": "-workbench.action.focusRightGroup"
-  },
-  {
-    "key": "cmd+k cmd+left",
-    "command": "-workbench.action.focusLeftGroup"
   },
   {
     "key": "cmd+enter",
@@ -1229,24 +1237,12 @@
     "command": "-workbench.action.focusAboveGroup"
   },
   {
-    "key": "ctrl+k ctrl+left",
-    "command": "-workbench.action.focusLeftGroup"
-  },
-  {
     "key": "ctrl+k ctrl+right",
     "command": "-workbench.action.focusRightGroup"
   },
   {
     "key": "ctrl+k ctrl+down",
     "command": "-workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+c j",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+c h",
-    "command": "workbench.action.focusLeftGroup"
   },
   {
     "key": "ctrl+shift+v",
@@ -1369,20 +1365,8 @@
     "command": "editor.action.clipboardCopyAction"
   },
   {
-    "key": "ctrl+c up",
-    "command": "workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "ctrl+c down",
+    "key": "ctrl+c j",
     "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+c left",
-    "command": "workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "ctrl+c right",
-    "command": "workbench.action.focusRightGroup"
   },
   {
     "key": "ctrl+c ctrl+c",
@@ -1698,10 +1682,6 @@
   {
     "key": "ctrl+k ctrl+right",
     "command": "-workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+k ctrl+left",
-    "command": "-workbench.action.moveEditorToPreviousGroup"
   },
   {
     "key": "ctrl+k ctrl+pagedown",
@@ -2126,10 +2106,6 @@
   {
     "key": "ctrl+alt+right",
     "command": "-workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+alt+left",
-    "command": "-workbench.action.moveEditorToPreviousGroup"
   },
   {
     "key": "ctrl+l f",
@@ -3287,11 +3263,7 @@
     "command": "workbench.files.action.focusOpenEditorsView"
   },
   {
-    "key": "alt+4",
-    "command": "outline.focus"
-  },
-  {
-    "key": "cmd+4",
+    "key": "ctrl+g o",
     "command": "outline.focus"
   },
   {
@@ -3337,7 +3309,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+9",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
@@ -3878,28 +3850,24 @@
     "when": "customTreeView && listFocus && !inputFocus"
   },
   {
-    "key": "alt+cmd+up",
+    "key": "ctrl+c up",
     "command": "workbench.action.moveEditorToAboveGroup",
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+cmd+down",
+    "key": "ctrl+c down",
     "command": "workbench.action.moveEditorToBelowGroup",
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+cmd+left",
+    "key": "ctrl+c left",
     "command": "workbench.action.moveEditorToLeftGroup",
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+cmd+right",
+    "key": "ctrl+c right",
     "command": "workbench.action.moveEditorToRightGroup",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+right",
-    "command": "workbench.action.moveEditorToNextGroup"
   },
   {
     "key": "ctrl+cmd+right",
@@ -3913,5 +3881,37 @@
     "key": "ctrl+s",
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus && findInputFocussed"
+  },
+  {
+    "key": "ctrl+c l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+9",
+    "command": "-workbench.action.moveEditorToLastGroup"
+  },
+  {
+    "key": "ctrl+cmd+1",
+    "command": "-workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "ctrl+g f",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "ctrl+g p",
+    "command": "workbench.action.problems.focus"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.files.action.focusFilesExplorer"
   }
 ]
