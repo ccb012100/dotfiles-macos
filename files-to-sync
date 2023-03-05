@@ -22,4 +22,4 @@ Library/Application Support/Alfred/Alfred.alfredpreferences/preferences
 .config/git
 .config/gh/config.yml
 .config/broot/conf.hjson
-.config/bat/bat.conf
+.config/bat/config
