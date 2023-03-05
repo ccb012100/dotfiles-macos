@@ -1,0 +1,25 @@
+Library/Application Support/sioyek/prefs_user.config
+Library/Application Support/sioyek/keys_user.config
+Library/Application Support/qmk/qmk.ini
+Library/Application Support/Code/User/keybindings.json
+Library/Application Support/Alfred/Alfred.alfredpreferences/preferences
+.zshrc
+.zsh
+.vim/vimrc
+.local/NOTES.code-workspace
+.hammerspoon/init.lua
+.gitconfig
+.config/warpd/config
+.config/starship.toml
+.config/ripgreprc
+.config/ranger/rc.conf
+.config/pgcli/config
+.config/neofetch/config.conf
+.config/micro/settings.json
+.config/kitty
+.config/karabiner/karabiner.json
+.config/karabiner/assets
+.config/git
+.config/gh/config.yml
+.config/broot/conf.hjson
+.config/bat/bat.conf
