@@ -6,7 +6,6 @@
 # easy way to call aliased commands
 alias ,=command
 alias back='cd -'
-alias c=cd
 alias cls=clear
 alias cp='cp -iv'
 alias ez='exec zsh'
@@ -44,6 +43,7 @@ alias llat='exa -al -t modified --sort newest'
 ### external tools
 alias b=bat
 alias brewup='brew upgrade'
+alias c=code
 # open current directory in VS Code
 alias c.='code .'
 alias difftastic=difft
@@ -77,16 +77,16 @@ alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
 ##git
-alias g=git
-alias ga='git a'
-alias gaa='git aa'
-alias gacm='git acm'
-alias gc='git c'
-alias gcm='git cm'
-alias gd='git d'
-alias gds='git ds'
-alias gf='git f'
-alias gl='git l'
-alias gp='git pull'
-alias gps='git push'
-alias gs='git s'
+alias k=git
+alias ka='git a'
+alias kaa='git aa'
+alias kacm='git acm'
+alias kc='git c'
+alias kcm='git cm'
+alias kd='git d'
+alias kds='git ds'
+alias kf='git f'
+alias kl='git l'
+alias kp='git pull'
+alias kps='git push'
+alias ks='git s'
